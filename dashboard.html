@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div>
+                <h1>Attendance Hub</h1>
+                <p>Student Attendance Dashboard</p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+
+            <h2>Welcome, Student 👋</h2>
+
+            <p>
+                Track your attendance, subjects and attendance history.
+            </p>
+
+        </section>
+
+
+        <!-- ATTENDANCE SUMMARY -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <h3>85%</h3>
+                <p>Overall Attendance</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>6</h3>
+                <p>Total Subjects</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>42</h3>
+                <p>Classes Attended</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>7</h3>
+                <p>Classes Absent</p>
+            </div>
+
+        </section>
+
+
+        <!-- MAIN ACTIVITIES -->
+        <section class="action-section">
+
+            <h2>Attendance Management</h2>
+
+            <div class="action-grid">
+
+
+                <!-- SUBJECT ATTENDANCE -->
+                <div class="action-card">
+
+                    <div class="icon">📚</div>
+
+                    <h3>Subject-wise Attendance</h3>
+
+                    <p>
+                        View attendance percentage for each subject.
+                    </p>
+
+         <button onclick="window.location.href='attendance.html'">
+            View Attendance
+         </button>
+                  
+
+                </div>
+
+
+                <!-- ATTENDANCE HISTORY -->
+                <div class="action-card">
+
+                    <div class="icon">📅</div>
+
+                    <h3>Attendance History</h3>
+
+                    <p>
+                        Check your daily attendance records.
+                    </p>
+
+         <button onclick="window.location.href='history.html'">
+            View History
+         </button>
+                  
+
+                </div>
+
+
+                <!-- LOW ATTENDANCE -->
+                <div class="action-card">
+
+                    <div class="icon">⚠️</div>
+
+                    <h3>Low Attendance Alert</h3>
+
+                    <p>
+                        Identify subjects with low attendance.
+                    </p>
+              <button onclick="window.location.href='alerts.html'">
+    Check Alerts
+              </button>
+                  
+
+                </div>
+
+
+                <!-- PROFILE -->
+                <div class="action-card">
+
+                    <div class="icon">👤</div>
+
+                    <h3>Student Profile</h3>
+
+                    <p>
+                        View your student information and details.
+                    </p>
+
+         <button onclick="window.location.href='profile.html'">
+           View Profile
+         </button>   
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT ATTENDANCE -->
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <
